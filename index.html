@@ -170,6 +170,289 @@
     </section>
     <!-- pricing end here -->
 
+    <!-- Register Section Start -->
+    <section class="register container mt-20" id="register">
+      <h2 class="title">Reserve Your Seat</h2>
+      <p class="register-subtitle">
+        Secure your ticket for DevConf 2026 today. Join over 4,000 developers,
+        students, founders, and tech enthusiasts in San Francisco. Complete your
+        registration before seats run out!
+      </p>
+
+      <div class="register-grid">
+        <!-- Left Side: Registration Form -->
+        <div class="register-form-container">
+          <form class="register-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john.doe@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+1 (555) 000-0000"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected>
+                    Select your country
+                  </option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="DE">Germany</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="IN">India</option>
+                  <option value="AU">Australia</option>
+                  <option value="JP">Japan</option>
+                  <option value="OTHER">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="profession">Profession</label>
+                <select id="profession" name="profession" required>
+                  <option value="" disabled selected>
+                    Select your profession
+                  </option>
+                  <option value="student">Student</option>
+                  <option value="frontend">Frontend Developer</option>
+                  <option value="backend">Backend Developer</option>
+                  <option value="ai">AI Engineer</option>
+                  <option value="devops">DevOps Engineer</option>
+                  <option value="designer">Designer</option>
+                  <option value="founder">Founder</option>
+                  <option value="recruiter">Recruiter</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="organization">Company or University</label>
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                placeholder="e.g., Stanford University or Tech Corp"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Ticket Type</label>
+              <div class="radio-group ticket-options">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="ticket-type"
+                    value="standard"
+                    checked
+                    required
+                  />
+                  <span class="custom-radio"></span>
+                  <span class="radio-text">Standard ($399)</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="ticket-type" value="pro" required />
+                  <span class="custom-radio"></span>
+                  <span class="radio-text">Pro ($749)</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="ticket-type"
+                    value="team"
+                    required
+                  />
+                  <span class="custom-radio"></span>
+                  <span class="radio-text">Team ($5,999)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dietary">Dietary Preference</label>
+                <select id="dietary" name="dietary" required>
+                  <option value="none" selected>No dietary restrictions</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="halal">Halal</option>
+                  <option value="gluten-free">Gluten-Free</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tshirt">T-Shirt Size</label>
+                <select id="tshirt" name="tshirt" required>
+                  <option value="" disabled>Select your size</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                  <option value="M" selected>M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="requirements">Special Requirements</label>
+              <textarea
+                id="requirements"
+                name="requirements"
+                rows="3"
+                placeholder="Access requirements, allergies, or other special requests..."
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" required />
+                <span class="custom-checkbox"></span>
+                <span class="checkbox-text"
+                  >I agree to the conference
+                  <a href="#">Terms of Service</a> and
+                  <a href="#">Privacy Policy</a>.</span
+                >
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-solid btn-register">
+              Complete Registration
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Side: Conference Info Card -->
+        <div class="register-info-container">
+          <div class="info-card">
+            <h3 class="info-card-title">DevConf 2026</h3>
+            <p class="info-card-tagline">
+              The premier developer conference of the year.
+            </p>
+
+            <hr class="info-divider" />
+
+            <div class="info-details">
+              <div class="info-item">
+                <span class="info-icon">📅</span>
+                <div>
+                  <h4 class="info-label">Date</h4>
+                  <p class="info-val">October 22–24, 2026</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <h4 class="info-label">Venue</h4>
+                  <p class="info-val">
+                    Innovation Convention Center, San Francisco
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">👥</span>
+                <div>
+                  <h4 class="info-label">Expected Attendees</h4>
+                  <p class="info-val">4,000+ Developers</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">🎤</span>
+                <div>
+                  <h4 class="info-label">Speakers</h4>
+                  <p class="info-val">50+ Industry Experts</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">⏰</span>
+                <div>
+                  <h4 class="info-label">Registration Deadline</h4>
+                  <p class="info-val deadline-highlight">October 10, 2026</p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="info-divider" />
+
+            <div class="info-inclusions">
+              <h4 class="inclusions-title">Every Registration Includes:</h4>
+              <ul class="inclusions-list">
+                <li>Access to all conference sessions</li>
+                <li>Networking opportunities</li>
+                <li>Lunch and coffee breaks</li>
+                <li>Digital certificate</li>
+                <li>Conference swag bag</li>
+              </ul>
+            </div>
+
+            <div class="seats-warning-box">
+              <div class="seats-warning-header">
+                <span class="warning-alert-icon">⚠️</span>
+                <span class="warning-text"
+                  ><strong>Only 300 seats remaining</strong></span
+                >
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: 75%"></div>
+              </div>
+              <div class="progress-bar-labels">
+                <span>75% Booked</span>
+                <span>25% Left</span>
+              </div>
+            </div>
+
+            <p class="reassurance-text">
+              Your registration will be confirmed by email within 24 hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Register Section End -->
+
     <!-- Footer Start -->
     <footer class="footer">
       <div class="container footer-content">
