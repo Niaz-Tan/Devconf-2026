@@ -27,6 +27,9 @@ ul {
   padding: 14px 28px;
   transition: 0.3s;
 }
+.btn-big {
+  font-size: 25px;
+}
 
 .btn-solid {
   background: #2563eb;
@@ -59,7 +62,16 @@ ul {
 
 .container {
   width: 85%;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.my-10 {
+  margin-top: 50px;
 }
 /* Resuable style end -----------------------*/
 
@@ -68,7 +80,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .nav-links {
@@ -87,3 +99,44 @@ ul {
   width: 150px;
 }
 /* Header style end------------------------ */
+
+/* Hero style start----------------------- */
+.hero {
+  background:
+    linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0.068)),
+    url("../assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 0 80px 0;
+}
+
+.hero-content div h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.hero-content div p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.767);
+}
+/* Hero style end----------------------- */
+
+/* speaker section's style star--------------------------t */
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* speaker section's style end-------------------------- */
