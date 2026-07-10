@@ -55,11 +55,6 @@ ul {
   border-color: #000000;
 }
 
-.btn-outline-black:hover {
-  background: #000000;
-  color: white;
-}
-
 .container {
   width: 85%;
   margin: 0 auto;
@@ -67,29 +62,34 @@ ul {
 
 .title {
   text-align: center;
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-size: 3.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 4rem;
 }
 
 .mt-10 {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .profession {
-  font-weight: 600;
-  font-size: 11px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #2563eb;
 }
 
 .name {
-  font-weight: 800;
-  font-size: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .about {
-  font-weight: 500;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.685);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6b7280;
 }
 /* Resuable style end -----------------------*/
 
@@ -157,14 +157,20 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  gap: 50px;
+  gap: 2rem;
 }
 
 .speaker-card {
-  border: rgba(0, 0, 0, 0.247) 1px solid;
-  border-radius: 8px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
   overflow: hidden;
-  width: 800px;
+  transition: all 0.2s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .speaker-card img {
