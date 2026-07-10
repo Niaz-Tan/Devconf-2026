@@ -68,10 +68,28 @@ ul {
 .title {
   text-align: center;
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
-.my-10 {
+.mt-10 {
   margin-top: 50px;
+}
+
+.profession {
+  font-weight: 600;
+  font-size: 11px;
+  color: #2563eb;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.about {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.685);
 }
 /* Resuable style end -----------------------*/
 
@@ -138,5 +156,26 @@ ul {
 .speaker-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 50px;
 }
+
+.speaker-card {
+  border: rgba(0, 0, 0, 0.247) 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 800px;
+}
+
+.speaker-card img {
+  width: 100%;
+}
+
+.speaker-card div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* speaker section's style end-------------------------- */
